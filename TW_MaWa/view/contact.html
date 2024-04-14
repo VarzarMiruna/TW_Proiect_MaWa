@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pagina Contact</title>
+  <link rel="website icon" href="/images/roz.jpeg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--pentru bara din stanga sus-->
+  <meta charset="UTF-8" >
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" > -->
+  <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"> <img id="logo" src="/images/profil.jpg"  alt="Profil"> </a>
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="party.html"><strong>MAKEUP PETRECERE</strong></a></li>
+          <li><a href="natural.html"><strong>MAKEUP NATURAL</strong></a></li>
+          <li><a href="zi.html"><strong>MAKEUP ZI</strong></a></li>
+          <li><a href="seara.html"><strong>MAKEUP SEARA</strong></a></li>
+          <li><a href="mireasa.html"><strong>MAKEUP MIREASA</strong></a></li>
+          <li><a href="tutorial.html"><strong>TUTORIAL</strong></a></li>
+          <li><a href="populare.html"><strong>TRENDING</strong></a></li>
+          <li><a href="login.html"><strong>LOGOUT</strong></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="clip">Contact</div>
+    <div class="text-box"> <h2>Your Make-up Web Assistant</h2> </div>
+  </section> <!--Section mare de la header--> 
+
+  <section class="course" id="about"> 
+    <h1>Echipa noastra: </h1>
+    <div class="row">
+        <div class="container">
+          <img src="/images/broasca.jpg" alt="Pers1" class="image">
+          <div class="middle">
+            <div class="text">Miruna Varzar</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="/images/broasca.jpg" alt="Pers2" class="image">
+          <div class="middle">
+            <div class="text">Alexandru Arama</div>
+          </div>
+        </div>
+    </div>    
+  </section>  
+  
+    <p>Ne puteti contacta oricand pe una din adresele de email indicate pe site.
+    <br>
+   <strong> ~ <a href="mailto:alinamirunaa@gmail.com">alinamirunaa@gmail.com</a> ~
+    <a href="mailto:alexarama@yahoo.com">alexarama@yahoo.com~</a></strong>
+    <br><br>
+    De asemenea, ne puteti trimite o sugestie/feedback, folosind urmatorul formular.</p><br>
+    <div class="formular">
+    <form action="/feedback" method="post"><br>
+        <label>Selectează secțiunea din care faci parte: </label>
+        <input list="sectiune">
+        <datalist id="sectiune">
+        <option value="Sunt Profesorul">Sunt Profesorul</option>
+        <option value="Sunt Utilizator">Sunt Utilizator</option> </datalist>
+        <br><br>
+        <input type="text"  name="numele"  placeholder="Nume"><br><br>
+        <input type="email" name="email"   placeholder="Email"><br><br>
+        <input type="text" name="subiect" placeholder="Subiectul mesajului"><br><br>
+        <input type="text" name="mesajul" placeholder="Continutul mesajul"><br><br>
+        <button type="submit">Submit</button><br>
+    </form>
+  </div>
+    <br><br><br>
+      <h3>~ Acest proiect a fost realizat de catre Miruna Varzar 
+      si  Alexandru Arama ~</h3><br><br>
+
+</body>
+</html>
