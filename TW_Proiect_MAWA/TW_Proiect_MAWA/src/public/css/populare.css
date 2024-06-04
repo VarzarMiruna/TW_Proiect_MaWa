@@ -1,0 +1,141 @@
+/*mai jos de header*/
+  
+.course
+{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+}
+h1{
+  color: rgb(127, 19, 66);
+  font-size: 30px;
+  font-weight:600;
+  margin-bottom: 15px;
+}
+p{
+  color: rgb(163, 24, 84);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 300; 
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row
+{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.course-col
+{
+ flex-basis: 31%;
+ background-color:white;
+ border-radius: 30px; /*patrate mici la final*/
+ margin-bottom: 5%;
+ padding: 20px 12px;
+ box-sizing: border-box; 
+ transition:cubic-bezier(0.075, 0.82, 0.165, 1);  /*0.5, width 1s*/
+}
+
+h3{
+  text-align: center;
+  font-weight: normal;
+  margin:10px 0;
+}
+
+.course-col:hover
+{
+  box-shadow:0 0 20px 0px rgba(221, 27, 27, 0.2);
+}
+
+
+/*pentru descrierea site-ului+imagini*/
+.descriere
+{
+color:rgb(163, 24, 84);
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 50px;
+}
+.descriere-col
+{
+flex-basis: 32%;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow:hidden ;
+}
+.descriere-col img
+{
+width: 50%;
+display: block;
+}
+
+.layer{
+background:transparent;
+height: 100%;
+width: 100%;
+position: absolute;
+top:0;
+left:0;
+transition: 0.5s;
+}
+
+.layer:hover{
+background: rgb(163, 24, 84); /*culoarea*/
+
+}
+
+.layer h3{
+width:100%;
+font-weight: 500;
+color:#fff;
+font-size: 26px;
+bottom:0;
+left:50%;
+transform: translateX(-50%);/*merg cu textul de jos pe centru in sus*/
+position: absolute;
+opacity: 0;
+transition: 0.5s;
+}
+.layer:hover h3
+{
+bottom:49%;
+opacity: 1;
+}
+
+/*casutele unde am produse virale+descrierea lor*/
+.articles
+{
+color:rgb(163, 24, 84); /*titlu la prod virale*/
+width:80%;
+margin:auto;
+text-align:center;
+padding-top:100px;
+
+}
+.articles-col
+{
+flex-basis: 31%;
+border-radius: 10px;
+margin-bottom: 5%;
+text-align: left;
+}
+.articles-col img{
+width: 100%;
+border-radius: 10px;
+}
+.articles-col p{
+padding: 0;
+}
+.articles-col h3{
+margin-top:16px;
+margin-bottom:15px;
+text-align: left;
+}
