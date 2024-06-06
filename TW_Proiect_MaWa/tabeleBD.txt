@@ -1,0 +1,66 @@
+CREATE SEQUENCE users_id_seq;
+CREATE SEQUENCE products_id_seq;
+CREATE SEQUENCE makeup_id_seq;
+CREATE SEQUENCE tip_ten_id_seq;
+CREATE SEQUENCE makeup_varsta_id_seq;
+CREATE SEQUENCE locatie_id_seq;
+
+CREATE TABLE IF NOT EXISTS public.users
+(
+    id_user integer NOT NULL DEFAULT nextval('users_id_seq'::regclass),
+    last_name text COLLATE pg_catalog."default",
+    first_name text COLLATE pg_catalog."default",
+    email text COLLATE pg_catalog."default" NOT NULL,
+    password text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT users_pkey PRIMARY KEY (id_user)
+);
+
+CREATE TABLE IF NOT EXISTS public.products
+(
+    id_product integer NOT NULL DEFAULT nextval('products_id_seq'::regclass),
+    name text COLLATE pg_catalog."default",
+    firma text COLLATE pg_catalog."default",
+    category text COLLATE pg_catalog."default", --produs pudra/cremos/lichid/stick
+    price double precision, 
+    CONSTRAINT products_pkey PRIMARY KEY (id_product)
+);
+
+CREATE TABLE IF NOT EXISTS public.makeup
+(
+    id_makeup integer NOT NULL DEFAULT nextval('makeup_id_seq'::regclass),
+    name text COLLATE pg_catalog."default", --zi/seara/ocazie
+    CONSTRAINT makeup_pkey PRIMARY KEY (id_makeup)
+);
+
+CREATE TABLE IF NOT EXISTS public.tip_ten
+(
+    id_ten integer NOT NULL DEFAULT nextval('tip_ten_id_seq'::regclass),
+    name text COLLATE pg_catalog."default", --ten uscat/mixt/gras/acneic
+    id_product integer not null,
+    id_makeup integer not null,
+    CONSTRAINT tip_ten_pkey PRIMARY KEY (id_ten, id_product, id_makeup),
+    CONSTRAINT tip_ten_product_fk FOREIGN KEY (id_product) REFERENCES public.products (id_product),
+    CONSTRAINT tip_ten_makeup_fk FOREIGN KEY (id_makeup) REFERENCES public.makeup (id_makeup)
+);
+
+CREATE TABLE IF NOT EXISTS public.makeup_varsta
+(
+    id_varsta integer NOT NULL DEFAULT nextval('makeup_varsta_id_seq'::regclass),
+    id_product integer not null,
+    id_makeup integer not null,
+    categorie_varsta text COLLATE pg_catalog."default", --sub_20, intre_20_30, intre_30_40, peste_40
+    CONSTRAINT makeup_varsta_pkey PRIMARY KEY (id_varsta),
+    CONSTRAINT makeup_varsta_product_fk FOREIGN KEY (id_product) REFERENCES public.products (id_product),
+    CONSTRAINT makeup_varsta_makeup_fk FOREIGN KEY (id_makeup) REFERENCES public.makeup (id_makeup)
+);
+
+CREATE TABLE IF NOT EXISTS public.locatie
+(
+    id_locatie integer NOT NULL DEFAULT nextval('locatie_id_seq'::regclass),
+    name text COLLATE pg_catalog."default", --facultate/nunta/restaurant/club
+    id_product integer not null, --iau detaliile despre produs
+    id_makeup integer not null,
+    CONSTRAINT locatie_pkey PRIMARY KEY (id_locatie),
+    CONSTRAINT makeup_varsta_product_fk FOREIGN KEY (id_product) REFERENCES public.products (id_product),
+    CONSTRAINT makeup_varsta_makeup_fk FOREIGN KEY (id_makeup) REFERENCES public.makeup (id_makeup)
+);

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Cont-page</title>
+    <link rel="website icon" href="/images/roz.jpeg">
+    <meta charset="UTF-8">
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="stylesheet">
+    <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <div class="Boxdetalii">
+      <div class="left">
+        <div class="overlay">
+          <h1>MaWA (Make-up Web Assistant)</h1>
+          <p>
+            Pe MaWa, fiecare utilizator isi gaseste 
+            pauza de infrumusetare ideala, avand acces la produsele 
+            premium si sfaturi personalizate care transforma orice 
+            rutina de machiaj intr-o experienta de neuitat.
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Inregistrare</h3>
+
+        <form action="/register" method="POST">
+          <input type="text" name="last_name" placeholder="Nume"><br>
+          <input type="text" name="first_name" placeholder="Prenume"><br>
+          <input type="email" name="email" placeholder="Email"><br>
+          <br>
+          <input type="password" name="password" placeholder="Parola"><br>
+          <br>
+          <input type="password" name="confirm_password" placeholder="Confirmare Parola"><br>
+          <br><br>
+          <p>Ai deja un cont? <a href="http://localhost:3000/login">Autentificare</a></p>
+          <button type="submit">Inregistrare</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
