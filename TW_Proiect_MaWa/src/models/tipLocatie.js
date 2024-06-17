@@ -4,7 +4,7 @@ const dbPool = require("../utils/dbSingleton");
 exports.getBarChartData3 = async() => {
     try{
         const dbClient = await dbPool.connect();
-        const query = `SELECT * FROM tip_locatie`;
+        const query = `SELECT * FROM locatie`;
         console.log('test_mod');
         const valuesQuery = [];
 

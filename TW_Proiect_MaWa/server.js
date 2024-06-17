@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
       if (!userData.email || !userData.password || !userData.confirm_password) {
         res.setHeader('Content-Type', 'text/html');
         res.statusCode = 400;
-        res.end('<h1>Toate câmpurile sunt necesare pentru înregistrare.</h1>');
+        res.end('<h1>Toate campurile trebuie completate.</h1>');
         return;
       }
       
@@ -58,7 +58,7 @@ const server = http.createServer((req, res) => {
         fs.readFile(loginPagePath, (err, content) => {
           if (err) {
             res.statusCode = 500;
-            res.end('Eroare la register Miru');
+            res.end('Eroare');
           } else {
             res.statusCode = 401;
             const errorMessage = `<h1>${result.message}</h1>`;
@@ -119,7 +119,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(500, {
           'Content-Type': 'text/html'
         });
-        res.end('A apărut o eroare la trimiterea email-ului de resetare.');
+        res.end('Nu s-a putut trimite email-ul de resetare a parolei. Încearcă din nou.');
       }
     });
   }  
@@ -153,7 +153,7 @@ function sendResetEmail(email, newPassword) {
     const mailOptions = {
       from: 'makeup@gmail.com',
       to: email,
-      subject: 'Resetare parolă',
+      subject: 'MaWa: Resetare parola',
       text: `Noua ta parolă este: ${newPassword}`
     };
 
