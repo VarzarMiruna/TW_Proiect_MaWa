@@ -1,0 +1,175 @@
+body {
+  background-color: #e2bbddd3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*font-family-> ce tip de scris sa avem*/
+  font-family: Arial, Helvetica, sans-serif;
+  color: #520960;
+}
+
+/*casuta unde avem poza si langa detaliile*/
+.Boxdetalii {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 40px;
+  background: #FFFFFF;
+  border-radius: 1%;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #a942a2ac;
+}
+
+.Boxdetalii div {
+  height: auto;
+}
+
+/*imaginea din stanga, opensite.jpg*/
+.Boxdetalii .left {
+  color: #FFF; /*pt scrisul de pe img*/
+  background-size:cover; /*sa mi se vada imaginea frumos*/
+  background-repeat: no-repeat;
+  background-image: url("/images/opensite.jpg");
+  
+}
+
+/*efect la poza mea*/
+/* covering the surface of an element with .overlay*/
+.Boxdetalii .left .overlay {
+  padding: 30px; 
+  width: 100%;
+  height: 100%;
+  background: #ab45927d; /*culoare poza*/
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/*pentru titlul de pe poza*/
+.Boxdetalii .left .overlay h1 {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1; 
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px; 
+}
+
+/*paragraf*/
+.Boxdetalii .left .overlay span p {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+/*pentru partea dreapta acum*/
+.Boxdetalii .right {
+  width: 150%;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.Boxdetalii .right h3 {
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 2px;
+}
+
+.Boxdetalii .right p {
+  font-size: 12px;
+  color: hotpink;
+}
+.Boxdetalii .right a {
+  font-size: 12px;
+  color: rgb(223, 112, 168);
+}
+
+.Boxdetalii .right .inputs {
+  overflow: hidden;
+}
+.Boxdetalii .right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #d3b4cc; /*culoarea la linii*/
+}
+
+
+.Boxdetalii .right .forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Boxdetalii .right .forget_password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+}
+
+
+
+/*butonlu autentificare, inregistr, pt parola*/
+.Boxdetalii .right button {
+  float: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  margin-top: 15px;
+  box-shadow: 0px 4px 20px 0px #d07fe9b5;
+ /*background-image: linear-gradient(135deg,#e735d2c3 10%, hotpink 100%);*/
+  background-image: linear-gradient(to right, #e735d2c3, hotpink);
+  
+}
+
+/*
+
+label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+}
+
+label::before {
+  content: ' \f00c';
+  position: absolute;
+  font-family: FontAwesome;
+  background: hotpink;
+  border: transparent;
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+}
+
+label:hover::before {
+  font-family: FontAwesome;
+  content: ' \f00c';
+  color: #fff;
+  cursor: pointer;
+  background: #d07fe9b5;
+}
+
+label:hover::before .text-checkbox {
+  background:#d07fe9b5;
+}
+
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+label input[type="checkbox"] {
+  display: none;
+}*/

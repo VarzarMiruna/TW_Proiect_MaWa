@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS public.prices
+(
+    id SERIAL PRIMARY KEY,
+    descriere TEXT NOT NULL,
+    categorie TEXT NOT NULL, --scump, ieftin
+    machiaj TEXT NOT NULL
+);
+
+-----------------------------------
+
+--makeup zi-----
+insert into prices (descriere, categorie, machiaj) values ('Pentru un machiaj de zi perfect pentru categoria  de produse lux cu valoare de peste 100 lei, incepe cu baza Milk Makeup Primer pentru a hidrata. Apoi fondul de ten Estee Lauder Double Wear pentru o bază perfect mată și cu acoperire completă. Concelearul Tarte Shape Tape Concealer pe zona de sub ochi si pe nas. Pentru ochi paleta de farduri Natasha Denona, conturând cu creionul dermatograf Dior. La genele mascara YSL. Pentru pomeți o culoare naturală cu blushul pudra Dior, iar produsul cremos Chanel pentru conturarea tenului. Iluminatorul Fenty Beauty in zona ochilor si pe obraji. Buzele folosind creionul Nude Rose Rare Beauty si lip oil Dior.','high-end','zi');
+
+insert into prices (descriere, categorie, machiaj) values ('Pentru un machiaj de zi perfect pentru categoria de produse drugstore cu valoare sub 100 lei, incepe cu baza Nyx pentru a hidrata. Apoi fondul de ten Nyx pentru o bază perfect mată și cu acoperire completă. Concelearul Maybelline pe zona de  sub ochi si pe nas. Pentru ochi paleta de farduri Catrice, conturând cu creionul dermatograf Avon. La genele mascara Sky High Maybelline. Pentru pomeți o culoare naturală cu blushul cremos She Glam, iar produsul cremos Nyx pentru conturarea tenului. Iluminatorul catrice in zona ochilor si pe obraji. Buzele folosind creionul Nude Nyx si luciu nyx.','drugstore','zi');
+
+
+-------------------------------
+
+--makeup seara--
+insert into prices (descriere, categorie, machiaj) values ('Pentru un machiaj de seara perfect pentru categoria de produse lux cu valoare de peste 100 lei, incepe cu baza Milk Makeup Primer pentru a hidrata. Apoi fondul de ten Estee Lauder Double Wear pentru o bază perfect mată și cu acoperire completă. Concelearul Tarte Shape Tape Concealer pe zona d esub ochi si pe nas, iar pentru fixare pudra Huda Beauty pe tot tenul. Pentru ochi paleta de farduri Natasha Denona, conturând cu creionul eyelinerul Dior. La genele mascara YSL. Pentru pomeți o culoare roz cu blushul pudra Dior, iar produsul cremos Makeup By Mario pentru conturarea tenului. Iluminatorul Fenty Beauty in zona ochilor si pe obraji. Buzele folosind creionul Nude Rose Rare Beauty si rujul Dior.','high-end','seara');
+
+insert into prices (descriere, categorie, machiaj) values ('Pentru un machiaj de seara perfect pentru categoria de produse de drugstore cu valoare sub 100 lei, incepe cu baza Nyx pentru a hidrata. Apoi fondul de ten Loreal pentru o bază perfect mată și cu acoperire completă. Concelearul Maybelline pe zona de sub ochi si pe nas, iar pentru fixare pudraMaybelline Fit Me pe tot tenul. Pentru ochi paleta de farduri Catrice, conturând cu creionul eyelinerul Essence. La genele mascara Sky High Maybelline. Pentru pomeți o culoare roz cu blushul pudra Loreal, iar produsul cremos Nyx pentru conturarea tenului. Iluminatorul Catrice in zona ochilor si pe obraji. Buzele folosind creionul Nude Nyx si rujul Nyx.','drugstore','seara');

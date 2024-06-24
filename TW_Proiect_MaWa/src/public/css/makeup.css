@@ -1,0 +1,90 @@
+/* pentru select de machiaj */
+.selector {
+  display: inline-block; 
+  margin: 115px 30px 0 90px; 
+  text-align: center; 
+  border-radius: 10px;  
+  padding: 30px; 
+  background-color: #fff; 
+  font-family: 'Poppins', sans-serif;
+} 
+
+.selector select {
+  width: auto; /* Lățimea se va adapta conținutului */
+  padding: 4px;
+  font-size: 14px;
+  background-color: rgb(246, 212, 217);
+  color: rgb(163, 24, 84);
+  font-weight: bold;
+  border: 1px solid hotpink;
+  border-radius: 6px;
+}
+
+select:hover {
+  outline: none;
+  border-color: hotpink;
+  box-shadow: 0 0 10px hotpink;
+} 
+
+.selector label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(163, 24, 84); 
+  margin-top: 0;
+  margin-bottom: 16px; 
+  text-align: left;
+}
+
+.selector option {
+  padding: 5px;
+  background: white; 
+  color: hotpink;
+}
+
+.chart-container {
+  flex-basis: 90%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box; 
+  transition: width 1s;
+}
+
+
+/*butonul pentru a vedea safturile dupa*/
+.chart-container button {
+  float: none;
+  color: rgb(163, 24, 84);
+  font-size: 20px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  border-color: rgb(163, 24, 84);
+  display: inline-block;
+  margin: 85px 10px 500px 700px;
+  background-color: #fff;
+
+}
+
+
+
+/* Stilizare pentru containerul care conține sfaturile */
+.sfaturi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid rgb(163, 24, 84);
+  border-radius: 8px;
+  color:rgb(163, 24, 84);
+  font-size:20px;
+}
+
+
+
+.sfaturi-container h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: red;
+}

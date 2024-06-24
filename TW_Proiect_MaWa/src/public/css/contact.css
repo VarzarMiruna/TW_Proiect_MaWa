@@ -1,0 +1,144 @@
+h1{
+  color: rgb(163, 24, 84);
+  font-size: 25px;
+  font-weight:900;
+  margin:0 340px 0 20px;
+}
+
+h3{
+  text-align: center;
+  color: rgb(163, 24, 84);
+  font-size: 20px;
+  font-weight:600;
+  margin-top:60px;
+  margin-bottom: 20px;
+}
+
+p{
+ 
+  color: rgb(163, 24, 84);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 150px;
+  margin-left: 420px;
+  font-weight: 300; 
+  
+  padding: 10px;
+}
+
+.mawa a {
+  color: white;
+  text-decoration: none;
+}
+
+.mawa a:hover {
+  color: white; 
+  text-decoration: none;
+}
+
+
+
+.course
+{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+}
+.row
+{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+.course-col
+{
+ flex-basis: 31%;
+ background-color:white;
+ border-radius: 30px; /*patrate mici la final*/
+ margin-bottom: 5%;
+ padding: 20px 12px;
+ box-sizing: border-box; 
+ transition:cubic-bezier(0.075, 0.82, 0.165, 1);  /*0.5, width 1s*/
+}
+
+.course-col h3{
+  text-align: center;
+  font-weight: normal;
+  margin:10px 0;
+}
+
+.course-col:hover
+{
+  box-shadow:0 0 20px 0px rgba(221, 27, 27, 0.2);
+}
+
+/*Pentru pagina de contact sa avem imaginile*/
+.container {
+    /*border: 1px solid rgb(127, 19, 66);*/
+    position: relative;
+    width: 50%;
+    border-radius:10px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 38%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: pink;
+    color:rgb(127, 19, 66);;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+/*pentru formular*/
+.formular {
+  color: rgb(163, 24, 84);
+  font-size: 20px;
+  margin-left:420px;
+  width:40%;
+  border: 1px solid rgb(127, 19, 66);
+}
+
+.formular button {
+  float: none;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 3%;
+  display: inline-block;
+  border: 2px solid rgb(163, 24, 84);
+  outline: 0;
+  margin: 10px 0 15px 480px;
+  background-color: white;
+  border-radius:100px;
+  color:rgb(163, 24, 84);
+}
+label{
+  margin:10px 10px 50px 50px;
+}

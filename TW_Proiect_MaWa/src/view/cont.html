@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>CONTUL-MEU</title>
+    <link rel="website icon" href="/images/roz.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/cont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="http://localhost:3000/pag_princ"><strong>MAWA</strong></a>
+            <a href="http://localhost:3000/contul_meu"> <img id= "logo" src="/images/icon.png"  alt="contulmeu"> </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="http://localhost:3000/pag_princ"><strong>HOME</strong></a></li>
+                    <li>
+                        <a><label for="chart-select"><strong>MAKEUP</strong></label>
+                            <select id="chart-select">
+                                <option></option>
+                                <option value="http://localhost:3000/zi"><strong>MAKEUP ZI</strong></option>
+                                <option value="http://localhost:3000/seara"><strong>MAKEUP SEARA</strong></option>
+                                <option value="http://localhost:3000/tutorial"><strong>TUTORIAL</strong></option>
+                                <option value="http://localhost:3000/populare"><strong>TRENDING</strong></option>
+                                <option value="http://localhost:3000/produse"><strong>PRODUSE</strong></option>
+                            </select>
+                        </a>
+                    </li>
+                    <li><a href="http://localhost:3000/favorite" style="font-weight: bold"><strong>FAVORITE</strong></a></li>
+                    <li><a href="http://localhost:3000/login"><strong>LOGOUT</strong></a></li>
+                    <li><a href="http://localhost:3000/contact"><strong>CONTACT</strong></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="clip">contul meu</div>
+        <div class="text-box">
+            <h2>Your Make-up Web Assistant</h2>
+        </div>
+    </section>
+
+    <br><br> 
+    <div class="full-page">
+        <div id="myaccount-form" class="myaccount-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="account()" class="toggle-btn"><strong>Detalii</strong></button>
+                    <button type="button" onclick="passwd()" class="toggle-btn1"><strong>Parola</strong></button>
+                </div>
+
+                <form id="account" class="input-group-account" action="/cont" method="GET">
+                    <h3>Nume</h3>
+                    <input type="text" name="last_name" class="input-field" disabled id="last_name" value='Varzar'>
+                    <h3>Prenume</h3>
+                    <input type="text" name="first_name" class="input-field" disabled id="first_name" value='Miruna'>
+                    <h3>Email</h3>
+                    <input type="email" name="email" class="input-field" disabled id="email" value='alinamirunaa@gmail.com'>
+                </form>
+                
+                <form id="passwd" class="input-group-passwd" action="/change" method="POST">
+                    <input type="email" class="input-field-p" placeholder="Adresa de email" name="email" required>
+                    <input type="password" class="input-field-p" placeholder="Parola Actuala" name="password" required>
+                    <input type="password" class="input-field-p" placeholder="Parola Noua" name="new_password" required>
+                    <input type="password" class="input-field-p" placeholder="Confirma Parola Noua" name="confirm_new_password" required>
+                    <button type="submit" class="submit-btn-p">Update</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>  
+    <script>
+        var navButton = document.querySelector("#nav-menu-button");
+        var navUl = document.querySelector(".nav-ul");
+
+        function toggleMobileMenu() {
+            navUl.classList.toggle("hide-ul");
+        }
+
+        navButton.onclick = toggleMobileMenu;
+    </script>
+    <!----Exact ca la login, afisarea datelor pentru butoanele apasate("My account" unde vede datele scrise in register, "Change Password" unde poate schimba parola-->
+    <script>
+        var a = document.getElementById('myaccount-form').style.display = 'block';
+        var x = document.getElementById('account');
+        var y = document.getElementById('passwd');
+        var z = document.getElementById('btn');
+
+        function passwd() {
+            x.style.left = '-44.25em';
+            y.style.left = '4.25em';
+            z.style.left = '6em';
+        }
+
+        function account() {
+            result = fetch('/cont', { method: 'GET' })
+            x.style.left = '3.25em';
+            y.style.left = '56.75em';
+            z.style.left = '0em';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById("myaccount-form");
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="js/menu.js"></script>
+    <script src="/js/pagPrinc.js"></script>
+</body>
+</html>

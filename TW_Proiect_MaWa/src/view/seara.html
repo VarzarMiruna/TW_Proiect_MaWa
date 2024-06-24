@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>MAKEUP-SEARA</title>
+    <link rel="website icon" href="/images/roz.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/makeup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="http://localhost:3000/pag_princ"><strong>MAWA</strong></a>
+            <a href="http://localhost:3000/contul_meu"> <img id= "logo" src="/images/icon.png"  alt="contulmeu"> </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="http://localhost:3000/pag_princ"><strong>HOME</strong></a></li>
+                    <li>
+                        <a><label for="chart-select"><strong>MAKEUP</strong></label>
+                            <select id="chart-select">
+                                <option></option>
+                                <option value="http://localhost:3000/zi"><strong>MAKEUP ZI</strong></option>
+                                <option value="http://localhost:3000/seara"><strong>MAKEUP SEARA</strong></option>
+                                <option value="http://localhost:3000/tutorial"><strong>TUTORIAL</strong></option>
+                                <option value="http://localhost:3000/populare"><strong>TRENDING</strong></option>
+                                <option value="http://localhost:3000/produse"><strong>PRODUSE</strong></option>
+                            </select>
+                        </a>
+                    </li>
+                    <li><a href="http://localhost:3000/favorite" style="font-weight: bold"><strong>FAVORITE</strong></a></li>
+                    <li><a href="http://localhost:3000/login"><strong>LOGOUT</strong></a></li>
+                    <li><a href="http://localhost:3000/contact"><strong>CONTACT</strong></a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="clip">makeup de seara</div>
+        <div class="text-box">
+            <h2>Your Make-up Web Assistant</h2>
+        </div>
+    </section>
+
+    <br><br>
+    <div class="chart-container">
+        <form id="seara-form" method="POST">
+            <div class="selector">
+                <label for="selector1"><strong>Vârstă</strong></label>
+                <select name="selector1" id="selector1">
+                    <option></option>
+                    <option value="sub 20">sub 20 ani</option>
+                    <option value="intre 20-30 ani">între 20-30 ani</option>
+                    <option value="intre 30-40 ani">între 30-40 ani</option>
+                    <option value="peste 40 ani">peste 40 ani</option>
+                </select>
+            </div>
+            <div class="selector">
+                <label for="selector2"><strong>Tipul de Ten</strong></label>
+                <select name="selector2" id="selector2">
+                    <option></option>
+                    <option value="gras">Gras</option>
+                    <option value="uscat">Uscat</option>
+                    <option value="mixt">Mixt</option>
+                    <option value="acneic">Acneic</option>
+                    <option value="sensibil">Sensibil</option>
+                </select>
+            </div>
+            <div class="selector">
+                <label for="selector3"><strong>Ocazie</strong></label>
+                <select name="selector3" id="selector3">
+                    <option></option>
+                    <option value="munca">Muncă</option>
+                    <option value="petrecere">Petrecere</option>
+                    <option value="banchet">Banchet</option>
+                    <option value="intalnire">întâlnire</option>
+                </select>
+            </div>
+            <div class="selector">
+                <label for="selector4"><strong>Produse</strong></label>
+                <select name="selector4" id="selector4">
+                    <option></option>
+                    <option value="high-end">scumpe</option>
+                    <option value="drugstore">ieftine</option>
+                </select>
+            </div>
+            <button type="submit">AFLĂ SFATURILE</button>
+        </form>
+        <div class="sfaturi-container">
+        <div id="sfaturi"></div></div>
+    </div>
+    <script src="/js/makeupSeara.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="/js/pagPrinc.js"></script>
+</body>
+</html>

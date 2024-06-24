@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="website icon" href="/images/roz.jpeg">
+  <meta charset="UTF-8">
+  <title>Prima-Login-page</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="Boxdetalii">
+    <div class="left">
+      <div class="overlay">
+        <h1>MaWA (Make-up Web Assistant)</h1>
+        <p>
+            MaWA, asistentul tau personal in machiaj, 
+            te asteapta pentru a te indruma spre cele mai bune 
+            sfaturi si produse. Haide sa ne reimprospatam rutina de 
+            infrumusetare si sa exploram impreuna reducerile actuale. 
+            Descopera si imbratiseaza cele mai bune oferte pentru tine!
+            
+        </p>
+      </div>
+    </div>
+
+    <div class="right">
+      <h3>Autentificare</h3>
+      
+      <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="Parolă"><br>
+        <button type="submit">Autentificare</button>
+      </form>
+      <br>
+      <p>
+        Nu ai un cont inca? <a href="http://localhost:3000/register">Creeaza aici</a>
+      </p>
+      <br><br>
+
+      <div class="forget_password ">
+        <p><abbr title="~foloseste adresa de mail sa primesti o parola noua~">Ai uitat parola? </abbr></p>
+        <form action="/reset-password" method="POST">
+          <input type="email" name="email" placeholder="Adresa de email" required>
+          <button type="submit">Resetează parola</button> 
+        </form>
+      </div>
+      <br>
+<div class="success-message">
+  <!-- mesajul de succes -->
+</div>
+      <div class="error-message">
+        <!-- mesajul de eroare -->
+      </div>
+    </div>
+  </div>
+  <script>
+    const errorMessage = document.querySelector('.error-message');
+    // verifica daca exista un mesaj de eroare
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get('error');
+  
+    if (error) {
+      //afiseaza eroarea in div-ul "error-message"
+      errorMessage.innerText = error;
+    }
+  
+  </script>
+</body>
+</html>

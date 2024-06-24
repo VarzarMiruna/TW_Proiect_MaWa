@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>FAVORITE</title>
+    <link rel="website icon" href="/images/roz.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/populare.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="mawa"><a href="http://localhost:3000/pag_princ"><strong>MAWA</strong></a></div>
+            <a href="http://localhost:3000/contul_meu"> <img id= "logo" src="/images/icon.png"  alt="contulmeu"> </a>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a style="font-weight: bold" href="http://localhost:3000/pag_princ">HOME</a></li>
+                    <li>
+                        <a>
+                            <label for="chart-select"><strong>MAKEUP</strong></label>
+                            <select id="chart-select">
+                                <option></option>
+                                <option value="http://localhost:3000/zi"><strong>MAKEUP ZI</strong></option>
+                                <option value="http://localhost:3000/seara"><strong>MAKEUP SEARA</strong></option>
+                                <option value="http://localhost:3000/tutorial"><strong>TUTORIAL</strong></option>
+                                <option value="http://localhost:3000/populare"><strong>TRENDING</strong></option>
+                                <option value="http://localhost:3000/produse"><strong>PRODUSE</strong></option>
+                            </select>
+                        </a>
+                    </li>
+                    <li><a style="font-weight: bold" href="http://localhost:3000/favorite">FAVORITE</a></li>
+                    <li><a href="http://localhost:3000/login"><strong>LOGOUT</strong></a></li>
+                    <li><a href="http://localhost:3000/contact"><strong>CONTACT</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="clip">favorite</div>
+        <div class="text-box">
+            <h2>Your Make-up Web Assistant</h2>
+        </div>
+    </section>
+
+    <section class="articles">
+        <h1><strong>CLASAMENT</strong></h1>
+        <div class="buttons">
+            <button class="submit-btn-p" onclick="exportTableToHTML()">Export HTML</button>
+            <button class="submit-btn-p" onclick="exportTableToPDF()">Export PDF</button>
+            <button class="submit-btn-p" onclick="exportTableToCSV()">Export CSV</button>
+            <button class="submit-btn-p" onclick="exportTableToJSON()">Export JSON</button>
+            <button class="submit-btn-p" onclick="exportTableToRSS()">Export RSS</button>
+        </div>
+        <div id="products" class="row">
+            <table id="clasament">
+                <thead>
+                    <th>Pozitie</th>
+                    <th>Imagine</th>
+                    <th>Categorie</th>
+                    <th>Firma</th>
+                    <th># Voturi</th>
+                </thead>
+            </table>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/pagPrinc.js"></script>
+    <script src="js/makeupClasament.js"></script>
+    <script src="js/export.js"></script>
+    <script>
+        async function exportTableToPDF() {
+            const table = document.getElementById('clasament');
+            html2pdf().from(table).save("clasament.pdf");
+        }
+    </script>
+</body>
+
+</html>

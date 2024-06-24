@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>PRODUSE</title>
+  <link rel="website icon" href="/images/roz.jpeg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/populare.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="mawa"><a href="http://localhost:3000/pag_princ"><strong>MAWA</strong></a></div>
+        <a href="http://localhost:3000/contul_meu"> <img id= "logo" src="/images/icon.png"  alt="contulmeu"> </a>
+        <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a style="font-weight: bold" href="http://localhost:3000/pag_princ">HOME</a></li>
+          <li>
+            <a>
+              <label for="chart-select"><strong>MAKEUP</strong></label>
+              <select id="chart-select">
+                <option></option>
+                <option value="http://localhost:3000/zi"><strong>MAKEUP ZI</strong></option>
+                <option value="http://localhost:3000/seara"><strong>MAKEUP SEARA</strong></option>
+                <option value="http://localhost:3000/tutorial"><strong>TUTORIAL</strong></option>
+                <option value="http://localhost:3000/populare"><strong>TRENDING</strong></option>
+                <option value="http://localhost:3000/produse"><strong>PRODUSE</strong></option>
+              </select>
+            </a>
+          </li>
+          <li><a style="font-weight: bold" href="http://localhost:3000/favorite">FAVORITE</a></li>
+          <li><a href="http://localhost:3000/login"><strong>LOGOUT</strong></a></li>
+          <li><a href="http://localhost:3000/contact"><strong>CONTACT</strong></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="clip">produse</div>
+    <div class="text-box">
+      <h2>Your Make-up Web Assistant</h2>
+    </div>
+  </section>
+
+  <section class="articles">
+    <h1><strong>VOTEAZA PRODUSUL FAVORIT</strong></h1>
+    <br>
+    <br>
+    <div id="products" class="row"></div>
+  </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/pagPrinc.js"></script>
+  <script src="js/makeupVote.js"></script>
+</body>
+</html>

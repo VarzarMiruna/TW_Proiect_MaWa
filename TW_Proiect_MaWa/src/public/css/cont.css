@@ -1,0 +1,197 @@
+/*
+.full-page
+{
+    height: 80%;;
+	width: 50%;
+	background-image:  url("/images/contulmeu.jpg");
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	position: absolute;
+  	font-family: 'Poppins', sans-serif;
+    margin-top:60px;
+    margin-left:20px;
+  
+}*/
+
+::placeholder { 
+	color: rgb(127, 19, 66);
+	font-family: 'Poppins', sans-serif;
+	font-size:1em;
+  }
+
+body, p, h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0;
+  color: rgb(127, 19, 66);
+}
+
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#myaccount-form
+{
+    display: none;
+}
+.form-box
+{
+	font-family: 'Poppins', sans-serif;
+    width:650px;
+	height:650px;
+	position:relative;
+    margin: 150px 20px 300px 420px;
+	background: white;/*culoare formular*/
+    overflow: hidden;
+	border-radius: 15px;
+}
+
+h3 {
+    margin:auto 5.8em;
+    display: block;
+    font-size: 1em;
+    padding: 0.5em 3em;
+    width: 5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(127, 19, 66);
+    
+}
+.button-box
+{
+	font-family: 'Poppins', sans-serif;
+	width: 16em;
+	margin:1.2em auto;
+	position:relative;
+    
+}
+.toggle-btn
+{
+	padding:2%;
+	cursor:pointer;
+	background:transparent;
+    font-size: 15px;
+	border:2px;
+	outline: none;
+	position: relative;
+	margin-top:30px;
+	color: rgb(163, 24, 84);
+}
+.toggle-btn1
+{
+	padding:2%;
+	cursor:pointer;
+	background:transparent;
+    font-size: 15px;
+	border:2px;
+	outline: none;
+	position: relative;
+	margin-top:30px;
+	color: rgb(163, 24, 84);
+	left:60px;
+}
+#btn
+{
+	/*margin-top: 27px;
+	position: absolute;
+	width: 120px;
+	height: 100%;
+	background: pink;
+	border-radius: 25px;*/
+
+	top: 20px;
+	position: absolute;
+	width: 35%;
+	height: 90%;
+	background: pink;
+	border-radius: 20px;
+	transition: .5s;
+	
+}
+.input-group-account
+{
+	margin-top: 100px;
+	position:absolute;
+	width:20%;
+	transition:.5s;
+}
+.input-group-passwd
+{
+    margin-top: 70px;
+	position:absolute;
+	width:20%;
+	transition:.5s;
+}
+.input-field
+{
+	width: 20em;
+	padding:1em 1em;
+	margin:5px 6em;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid pink;
+	outline:none;
+    font-family: 'Poppins', sans-serif;
+	background: transparent;
+}
+.input-field-p
+{
+	width: 25em;
+	padding:1em 1em;
+	margin:1em 2em;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 0.063em solid pink;
+	outline:none;
+    font-family: 'Poppins', sans-serif;
+	background: transparent;
+}
+.submit-btn
+{
+    width: 4em;
+	padding: 0.238em 0em;
+	cursor: pointer;
+    font-size: 1em;
+	display: block;
+	margin: 1.5em 17em;
+	background: pink;
+	border: 0;
+	outline: none;
+	border-radius: 1.875em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.submit-btn-p
+{
+    width: 100%;
+	height: 100%;
+	padding: 0.238em 0em;
+	cursor: pointer;
+    font-size: 1em;
+	display: block;
+	margin: 10px 10px 100px 395px;
+	background: pink;
+	border: 0;
+	outline: none;
+	border-radius: 1.875em;
+	font-family: 'Poppins', sans-serif;
+}
+
+#account input
+{
+	color:pink;
+	font-size: 1.125em;
+}
+
+form#passwd {
+    left: 49.75em;
+}
+#passwd input
+{
+	color:pink;
+	font-size: 1.125em;
+}
+
+

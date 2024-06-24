@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>CONTACT</title>
+    <link rel="website icon" href="/images/roz.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="mawa"><a href="http://localhost:3000/pag_princ"><strong>MAWA</strong></a></div>
+            <a href="http://localhost:3000/contul_meu"> <img id= "logo" src="/images/icon.png"  alt="contulmeu"> </a>
+            
+            <div class="nav-links" id="nav-links">
+                <ul>
+                  <li>
+                        <a>
+                            <label for="chart-select"><strong>MAKEUP</strong></label>
+                            <select id="chart-select">
+                                <option></option>
+                                <option value="http://localhost:3000/zi"><strong>MAKEUP ZI</strong></option>
+                                <option value="http://localhost:3000/seara"><strong>MAKEUP SEARA</strong></option>
+                                <option value="http://localhost:3000/tutorial"><strong>TUTORIAL</strong></option>
+                                <option value="http://localhost:3000/populare"><strong>TRENDING</strong></option>
+                                <option value="http://localhost:3000/produse"><strong>PRODUSE</strong></option>
+                            </select>
+                        </a>
+                    </li>
+                    <li><a style="font-weight: bold" href="http://localhost:3000/favorite">FAVORITE</a></li>
+                    <li><a href="http://localhost:3000/login"><strong>LOGOUT</strong></a></li>
+                    <li><a href="http://localhost:3000/contact"><strong>CONTACT</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="clip">Contact</div>
+    <div class="text-box"> <h2>Your Make-up Web Assistant</h2> </div>
+  </section> <!--Section mare de la header--> 
+
+  <section class="course" id="about"> 
+    <h1>~ Echipa noastra ~ </h1>
+    <div class="row">
+        <div class="container">
+          <img src="/images/miru.jpg" alt="Pers1" class="image">
+          <div class="middle">
+            <div class="text">Miruna Varzar</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="/images/alex.jpg" alt="Pers2" class="image">
+          <div class="middle">
+            <div class="text">Alexandru Arama</div>
+          </div>
+        </div>
+    </div>    
+  </section>  
+  
+    <p>Ne puteti contacta oricand pe adresa de email.
+    <br>
+   <strong> ~ <a href="mailto:mawa.makeup2024@gmail.com">mawa.makeup2024@gmail.com</a> ~ </strong>
+    <br><br>
+    De asemenea, ne puteti trimite o sugestie/feedback, folosind urmatorul formular.</p><br>
+    <div class="formular">
+    <form action="/feedback" method="post"><br>
+        <h3>Formular Feedback</h3> <br>
+        <label>Selectează secțiunea din care faci parte: </label>
+        <select name="user" required>
+        <option value="" disabled selected></option>
+        <option value="Femeie">Femeie</option>
+        <option value="Barbat">Barbat</option> 
+        </select>
+        <br><br>
+        <!-- <input type="text"  name="nume"  placeholder="Nume" required><br><br>
+        <input type="email" name="email"   placeholder="Email" required><br><br> -->
+        <label>Subiectul mesajului: </label>
+        <input type="text" name="subiect" placeholder="Subiectul mesajului" required><br><br>
+        <label>Mesajul: </label>
+        <input type="text" name="mesaj" placeholder="Continutul mesajul" required><br><br>
+        <button type="submit"><strong>Submit</strong></button><br>
+    </form>
+  </div>
+    <br><br><br>
+      <h3>~ Acest proiect a fost realizat de catre Miruna Varzar 
+      si  Alexandru Arama ~</h3><br><br>
+      <script src="js/menu.js"></script>
+      <script src="js/pagPrinc.js"></script>
+</body>
+</html>

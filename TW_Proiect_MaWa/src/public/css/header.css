@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  #logo
+  {
+
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+  }
+  a {
+    color: white;
+    text-decoration: none; 
+}
+  a:hover{
+  color:white;
+ }
+  
+  body
+  {
+    background-color: rgb(246, 212, 217);
+  }
+  
+  .header
+  {
+    height: 45vh; /*min-height: 100vh*/
+    width: 100%;
+    background-image: url("/images/roz.jpeg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    /*border-bottom: 20px white;*/
+  }
+
+
+  /*pentru optiunile din stanga sus*/
+  nav{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    padding: 3% 11%;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  nav img{
+    width: 21px;
+  }
+
+  .nav-links{
+    flex:1;
+    text-align:right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  #chart-select
+  {
+    margin-left: 5px;
+    color:hotpink;
+  }
+  /*sa apara o linie sub Pentru tine si pt logout*/
+  .nav-links ul li::after
+  {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(226, 115, 171);
+    display: block;
+    margin: auto;
+    transition: width 1s;
+  }
+
+  #chart-select
+  {
+    margin-left: 5px;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+
+/*scris cu poza-> MAKEUP*/
+  .clip {
+    font-weight: 100;
+    font-family:"Sofia", sans-serif;
+    font-size: 95px;
+    text-align: center;
+    background-color: #fff;
+    background-size: 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+/*your Makeup web assistent pt paginile machiaje*/
+  .text-box h2{
+    text-align:center;
+    color:#fff;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 15px;
+    font-size: 25px;
+  }
+   
+  nav .fa{
+    display:none;
+  }
+
+  @media(max-width:700px)
+  {
+    #logo
+    {
+      width: 6vh;
+      height: 6vh;
+    }
+    .text-box h2{
+      color: #fff;
+      font-style: italic;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 28px;
+      margin-top: 30px;
+    }
+    .text-box p{
+      margin:10px 0 40px;
+      font-size: 14px;
+      color: #fff;
+    
+    }
+    .nav-links ul li {
+      display: block;
+    }  
+    .nav-links {
+      position: absolute;
+      background:rgb(127, 19, 66);
+      height: 100vh;
+      width: 200px;
+      top:0;
+      right: -200px;/*ascund meniul*/
+      text-align: left;
+      z-index:2;
+      transition: 1s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .nav-links ul {
+      padding: 30px;
+    }
+    #chart-select
+      {
+        margin-left: -25px;
+      }
+
+    .clip {
+      text-shadow:2px 2px white;
+      font-weight: 20;
+      font-family:"Sofia", sans-serif;
+      font-size: 30px;
+      text-align: center;
+      /*background-image: url("../images/opensite.jpg");*/
+      background-color:whitesmoke;
+      background-size: 15%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      }
+  }
+
+  @media(max-width:700px)
+  {
+    #logo
+    {
+      width: 6vh;
+      height: 6vh;
+    }
+    .text-box h2{
+      color: #fff;
+      font-style: italic;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 28px;
+      margin-top: 30px;
+    }
+    .text-box p{
+      margin:10px 0 40px;
+      font-size: 14px;
+      color: #fff;
+    
+    }
+    .nav-links ul li {
+      display: block;
+    }  
+    .nav-links {
+      position: absolute;
+      background:rgb(127, 19, 66);
+      height: 100vh;
+      width: 200px;
+      top:0;
+      right: -200px;/*ascund meniul*/
+      text-align: left;
+      z-index:2;
+      transition: 1s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul {
+      padding: 30px;
+      
+    }
+    #chart-select
+      {
+        margin-left: -25px;
+      }
+
+    .clip {
+      text-shadow:2px 2px white;
+      font-weight: 20;
+      font-family:"Sofia", sans-serif;
+      font-size: 30px;
+      text-align: center;
+      /*background-image: url("../images/opensite.jpg");*/
+      background-color:whitesmoke;
+      background-size: 15%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+    
+
+ 
+
+
+

@@ -1,0 +1,62 @@
+CREATE TABLE IF NOT EXISTS public.products
+(
+    id SERIAL PRIMARY KEY,
+    nume TEXT NOT NULL,
+    firma TEXT NOT NULL, 
+    imagine TEXT NOT NULL,
+    voturi INT NOT NULL
+);
+
+insert into products (nume, firma, imagine, voturi) values ('fond de ten','Estee Lauder','https://i.pinimg.com/236x/dc/10/ae/dc10ae7eb38a1fa25893079610a30efa.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('fond de ten','Loreal True Match','https://i.pinimg.com/736x/70/58/27/70582738a0d182df1126914af466c463.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('concelear','Nyx','https://i.pinimg.com/736x/2b/ad/b8/2badb82efdb811ec8385ddefa6335127.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('concelear','Maybelline','https://i.pinimg.com/736x/e6/02/12/e602122fd1bba6daa6d2ddc238583f87.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('concelear','Tarte','https://i.pinimg.com/736x/2f/6e/fa/2f6efa489a8601c9a5748caf1de48bf7.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('pudra','Huda Beauty','https://i.pinimg.com/736x/9e/3a/7a/9e3a7a89be5f290e76d2903f09ace86b.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('pudra','Fit Me Maybelline','https://i.pinimg.com/736x/ee/92/2a/ee922a81dce198cfad00be4ef153a9a8.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('paleta farduri','Natasha','https://i.pinimg.com/736x/7c/d5/40/7cd5409d58925837089f84ca00dbbbb6.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('paleta farduri','Revolution Pro','https://i.pinimg.com/736x/58/b4/a7/58b4a7ef459f136897761d3c3ee14a20.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('paleta farduri','Catrice','https://i.pinimg.com/736x/4c/9e/b2/4c9eb2dfb9ba3088348ce20b9fe4f858.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('blush','Dior','https://i.pinimg.com/736x/50/0a/e5/500ae545b026e12f47b1291c2c28b28c.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('blush','Nyx','https://i.pinimg.com/736x/0a/75/8e/0a758e39779c43e06a6af1a9cc4b2379.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('blush','Rare Bauty','https://i.pinimg.com/736x/2d/51/b5/2d51b5f4c60b5621f49460056f6ddae9.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('bronzer','Makeup By Mario','https://i.pinimg.com/236x/ef/14/1a/ef141a075db3e0bbb7b7aad8b962037d.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('bronzer','Nyx','https://i.pinimg.com/736x/fe/55/8c/fe558c99ca72e8a341250a4f224bac30.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('bronzer','Chanel','https://i.pinimg.com/736x/11/d1/99/11d199ff10688b74012dcdded77ddc9e.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('iluminator','Fenty Beauty','https://i.pinimg.com/736x/51/d9/70/51d970caf287290c49d46070b9ca5b21.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('iluminator','Catrice','https://i.pinimg.com/736x/19/75/b7/1975b7459825d4bd5a6b925c794ccd01.jpg', 0);
+
+
+insert into products (nume, firma, imagine, voturi) values ('mascara','YSL','https://i.pinimg.com/736x/84/d2/2b/84d22b906688853103aa66fd014c1e06.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('mascara','Sky High Maybelline','https://i.pinimg.com/736x/ea/fc/59/eafc59db781d5febd222d3b133573888.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('baza de machiaj','Milk','https://i.pinimg.com/736x/a2/61/64/a261644c260378c17d982f94c8483acb.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('baza de machiaj','Nyx','https://i.pinimg.com/736x/d0/39/a0/d039a0ba2dd0a9e8096d482695e1f4f4.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('ceara sprancene','Nyx','https://i.pinimg.com/736x/26/3d/a5/263da5f9771818ad9c63794e8c1bfc37.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('ceara sprancene','Anastasia','https://i.pinimg.com/736x/35/60/67/356067216649167373e14f077d437f44.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('carioca sprancene','Nyx','https://i.pinimg.com/736x/8c/9b/e3/8c9be39937d4ac7613606a6dd40a2b19.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('carioca sprancene','Anastasia','https://i.pinimg.com/736x/a6/76/ec/a676eca84ed8cb1fda356bcb4b5135f4.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('eyeliner','Nyx','https://i.pinimg.com/736x/e4/d3/ab/e4d3abae44c73b21dc80a28e9f309fee.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('eyeliner','Essence','https://i.pinimg.com/736x/82/6d/30/826d3099d1e05d0221d1d65d24c25e57.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('creion dermatograf','Avon','https://i.pinimg.com/736x/f6/e7/2b/f6e72b79ebc037caebc31b2aa0384ed3.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('creion dermatograf','Huda','https://i.pinimg.com/736x/06/b8/a5/06b8a54b867a28e369cf63276aa4d4b3.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('creion de buze','Rare Beauty','https://i.pinimg.com/736x/7f/99/19/7f99197f76d5823134546560f57f1db0.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('creion de buze','Nyx','https://i.pinimg.com/736x/e6/8a/50/e68a5093f222846079212ce73ab433ca.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('ruj','Nyx','https://i.pinimg.com/736x/51/7c/0c/517c0c9154e3dcb513ef67d4a8e095d0.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('ruj','Maybelline','https://i.pinimg.com/736x/95/7b/48/957b4879ccb992c16e660946fcc220b9.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('ruj','Dior','https://i.pinimg.com/736x/2c/0e/9a/2c0e9a3c72346f7cbf695bfadc38580e.jpg', 0);
+
+insert into products (nume, firma, imagine, voturi) values ('gloss','Dior','https://i.pinimg.com/736x/e3/1d/2b/e31d2bb94f1738520e57fbd5d53b77da.jpg', 0);
+insert into products (nume, firma, imagine, voturi) values ('gloss','Nyx','https://i.pinimg.com/736x/ce/3b/7e/ce3b7e6be439ee64915ab968e3b4de8d.jpg', 0);
